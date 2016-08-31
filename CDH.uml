@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_EsTlIG9xEeahutXcYi_8-w" name="RootElement">
-    <packagedElement xmi:type="uml:Class" xmi:id="_E0reAG9xEeahutXcYi_8-w" name="Block1"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E0reAG9xEeahutXcYi_8-w" name="CMDs Management">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jV5_IG-GEeahutXcYi_8-w" name="timer" type="_lNSXgG-GEeahutXcYi_8-w" aggregation="composite" association="_lNvDcG-GEeahutXcYi_8-w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_c7sW8G-VEeahutXcYi_8-w">
+          <body>{isPeriodic=True; 
+duration=(TBC,us)}</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z3wXwG-IEeahutXcYi_8-w" name="receptorCMD" type="_dMDaEG-IEeahutXcYi_8-w" aggregation="composite" association="_dMISkG-IEeahutXcYi_8-w"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_hlPn4G-IEeahutXcYi_8-w" name="USART4" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_OToX0G-JEeahutXcYi_8-w" name="I2C" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-sdZMG-JEeahutXcYi_8-w" name="managMemory" type="_BsCvwG-KEeahutXcYi_8-w" aggregation="composite" association="_BsGaIG-KEeahutXcYi_8-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3Ml44G-KEeahutXcYi_8-w" name="exploratorCMD" type="_AVL1EG-LEeahutXcYi_8-w" aggregation="composite" association="_AVNqQG-LEeahutXcYi_8-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3UsgcG-UEeahutXcYi_8-w" name="part1" type="_5RK0MG-UEeahutXcYi_8-w" aggregation="composite" association="_5RN3gG-UEeahutXcYi_8-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6YiE4G-UEeahutXcYi_8-w" name="part2" type="_8eV60G-UEeahutXcYi_8-w" aggregation="composite" association="_8eYXEG-UEeahutXcYi_8-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-oCyQG-UEeahutXcYi_8-w" name="part3" type="__a0TAG-UEeahutXcYi_8-w" aggregation="composite" association="__a2IMG-UEeahutXcYi_8-w"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_GgrY4G-JEeahutXcYi_8-w" name="TLCMD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Ggr_8G-JEeahutXcYi_8-w" role="_hlPn4G-IEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Ggr_8W-JEeahutXcYi_8-w" role="_Z3wXwG-IEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_GHFXsG-KEeahutXcYi_8-w" name="CMDs">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_GHF-wG-KEeahutXcYi_8-w" role="_Z3wXwG-IEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_GHGl0G-KEeahutXcYi_8-w" role="_-sdZMG-JEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_DKIo8G-LEeahutXcYi_8-w" name="CMD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_DKJQAG-LEeahutXcYi_8-w" role="_3Ml44G-KEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_DKJQAW-LEeahutXcYi_8-w" role="_-sdZMG-JEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_BP8ooG-VEeahutXcYi_8-w" name="Ticks">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_BP9PsG-VEeahutXcYi_8-w" role="_jV5_IG-GEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_BP9PsW-VEeahutXcYi_8-w" role="_3Ml44G-KEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_Fq6YEG-VEeahutXcYi_8-w" name="CMDs">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Fq6_IG-VEeahutXcYi_8-w" role="_OToX0G-JEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Fq6_IW-VEeahutXcYi_8-w" role="_6YiE4G-UEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_L6W84G-VEeahutXcYi_8-w" name="CMD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_L6Xj8G-VEeahutXcYi_8-w" role="_3Ml44G-KEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_L6Xj8W-VEeahutXcYi_8-w" role="_-oCyQG-UEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_NV_0cG-VEeahutXcYi_8-w" name="CMD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_NWAbgG-VEeahutXcYi_8-w" role="_-oCyQG-UEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_NWBCkG-VEeahutXcYi_8-w" role="_6YiE4G-UEeahutXcYi_8-w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_OiAUkG-VEeahutXcYi_8-w" name="CMD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OiA7oG-VEeahutXcYi_8-w" role="_-oCyQG-UEeahutXcYi_8-w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OiA7oW-VEeahutXcYi_8-w" role="_3UsgcG-UEeahutXcYi_8-w"/>
+      </ownedConnector>
+    </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_shGI4G9xEeahutXcYi_8-w" name="UseCase">
       <packagedElement xmi:type="uml:Package" xmi:id="_5MdBMG9xEeahutXcYi_8-w" name="CD&amp;H_Commands_Mang">
         <packagedElement xmi:type="uml:UseCase" xmi:id="_s_uJIG9yEeahutXcYi_8-w" name="TLCMD Reception">
@@ -74,6 +121,64 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_gDA98W95EeahutXcYi_8-w" name="send cmd" type="_PGPwQG94EeahutXcYi_8-w" association="_gC_v0G95EeahutXcYi_8-w"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lNSXgG-GEeahutXcYi_8-w" name="Timer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vV5hEG-YEeaf45zNRmm4CA" name="exploratorcmd_1" type="_AVL1EG-LEeahutXcYi_8-w" association="_vVyMUG-YEeaf45zNRmm4CA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lNvDcG-GEeahutXcYi_8-w" name="Association1" memberEnd="_jV5_IG-GEeahutXcYi_8-w _lNvDc2-GEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lNvDcW-GEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lNvDcm-GEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lNvDc2-GEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_lNvDcG-GEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dMDaEG-IEeahutXcYi_8-w" name="ReceptorCMD"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dMISkG-IEeahutXcYi_8-w" name="Association2" memberEnd="_Z3wXwG-IEeahutXcYi_8-w _dMISk2-IEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dMISkW-IEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dMISkm-IEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dMISk2-IEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_dMISkG-IEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BsCvwG-KEeahutXcYi_8-w" name="ManagMemory"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BsGaIG-KEeahutXcYi_8-w" name="Association3" memberEnd="_-sdZMG-JEeahutXcYi_8-w _BsGaI2-KEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BsGaIW-KEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BsGaIm-KEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BsGaI2-KEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_BsGaIG-KEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AVL1EG-LEeahutXcYi_8-w" name="ExploratorCMD">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vV6vMG-YEeaf45zNRmm4CA" name="timer_1" type="_lNSXgG-GEeahutXcYi_8-w" association="_vVyMUG-YEeaf45zNRmm4CA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AVNqQG-LEeahutXcYi_8-w" name="Association4" memberEnd="_3Ml44G-KEeahutXcYi_8-w _AVNqQ2-LEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AVNqQW-LEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AVNqQm-LEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AVNqQ2-LEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_AVNqQG-LEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5RK0MG-UEeahutXcYi_8-w" name="ExcecuteCMD"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5RN3gG-UEeahutXcYi_8-w" name="Association5" memberEnd="_3UsgcG-UEeahutXcYi_8-w _5RN3g2-UEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5RN3gW-UEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5RN3gm-UEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5RN3g2-UEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_5RN3gG-UEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8eV60G-UEeahutXcYi_8-w" name="SenderCMD"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8eYXEG-UEeahutXcYi_8-w" name="Association6" memberEnd="_6YiE4G-UEeahutXcYi_8-w _8eY-Im-UEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8eY-IG-UEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8eY-IW-UEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8eY-Im-UEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_8eYXEG-UEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__a0TAG-UEeahutXcYi_8-w" name="ProcessorCMD"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="__a2IMG-UEeahutXcYi_8-w" name="Association7" memberEnd="_-oCyQG-UEeahutXcYi_8-w __a2IM2-UEeahutXcYi_8-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__a2IMW-UEeahutXcYi_8-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__a2IMm-UEeahutXcYi_8-w" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__a2IM2-UEeahutXcYi_8-w" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="__a2IMG-UEeahutXcYi_8-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vVyMUG-YEeaf45zNRmm4CA" memberEnd="_vV5hEG-YEeaf45zNRmm4CA _vV6vMG-YEeaf45zNRmm4CA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vV2dwG-YEeaf45zNRmm4CA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vV3E0G-YEeaf45zNRmm4CA" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ExvewG9xEeahutXcYi_8-w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ExwF0G9xEeahutXcYi_8-w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -142,4 +247,13 @@
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_E0w9kG9xEeahutXcYi_8-w" base_Class="_E0reAG9xEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_lNTloG-GEeahutXcYi_8-w" base_Class="_lNSXgG-GEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_dMEoMG-IEeahutXcYi_8-w" base_Class="_dMDaEG-IEeahutXcYi_8-w"/>
+  <PortAndFlows:FlowPort xmi:id="_hlrFsG-IEeahutXcYi_8-w" base_Port="_hlPn4G-IEeahutXcYi_8-w" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_OT8g4G-JEeahutXcYi_8-w" base_Port="_OToX0G-JEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_BsDW0G-KEeahutXcYi_8-w" base_Class="_BsCvwG-KEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_AVNDMG-LEeahutXcYi_8-w" base_Class="_AVL1EG-LEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_5RMCUG-UEeahutXcYi_8-w" base_Class="_5RK0MG-UEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="_8eXI8G-UEeahutXcYi_8-w" base_Class="_8eV60G-UEeahutXcYi_8-w"/>
+  <Blocks:Block xmi:id="__a06EG-UEeahutXcYi_8-w" base_Class="__a0TAG-UEeahutXcYi_8-w"/>
 </xmi:XMI>
