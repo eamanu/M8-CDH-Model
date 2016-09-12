@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dvHo4G-eEeacOoNF2GD3DA" name="RootElement">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_ocCw8HjmEea9GJgJKjF9pw">
+    <body>Estructura de comando</body>
+  </ownedComment>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_bv-mMG-fEeacOoNF2GD3DA" name="CmdReception_1">
     <ownedComment xmi:type="uml:Comment" xmi:id="_6pwkgG-kEeacOoNF2GD3DA">
       <body>Se asume newData como una interrupcion, no es seguro de que la capacidad este disponible. En caso de no existir se debe hacer pooling en un bucle del puerto. </body>
@@ -94,7 +97,7 @@
       <message xmi:type="uml:Message" xmi:id="_0tcFFnEJEeaTotSN2YqBpA" name="Enter()" receiveEvent="_0tcE7nEJEeaTotSN2YqBpA" sendEvent="_0tcE7XEJEeaTotSN2YqBpA"/>
       <message xmi:type="uml:Message" xmi:id="_0tcFF3EJEeaTotSN2YqBpA" name="Ok" messageSort="reply" receiveEvent="_0tcE8nEJEeaTotSN2YqBpA" sendEvent="_0tcE8HEJEeaTotSN2YqBpA"/>
       <message xmi:type="uml:Message" xmi:id="_0tcFGHEJEeaTotSN2YqBpA" name="Push()" receiveEvent="_0tcE9HEJEeaTotSN2YqBpA" sendEvent="_0tcE9XEJEeaTotSN2YqBpA">
-        <argument xmi:type="uml:StringExpression" xmi:id="_0tcFGXEJEeaTotSN2YqBpA" name="Command"/>
+        <argument xmi:type="uml:StringExpression" xmi:id="_0tcFGXEJEeaTotSN2YqBpA" name="Command" type="_hjb6YHjmEea9GJgJKjF9pw"/>
       </message>
       <message xmi:type="uml:Message" xmi:id="_0tcFGnEJEeaTotSN2YqBpA" name="Ok" messageSort="reply"/>
       <message xmi:type="uml:Message" xmi:id="_0tcFG3EJEeaTotSN2YqBpA" name="Leave()" receiveEvent="_0tcE-3EJEeaTotSN2YqBpA" sendEvent="_0tcE-XEJEeaTotSN2YqBpA"/>
@@ -321,6 +324,62 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_8dGxEHQ8EeaVIM6oAxJeaA" name="Defrag()" incoming="_IVIH8HQ9EeaVIM6oAxJeaA" outgoing="_QC99YHQ9EeaVIM6oAxJeaA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_--xckHQ8EeaVIM6oAxJeaA" name="Leave()" incoming="_QC99YHQ9EeaVIM6oAxJeaA" outgoing="_SiDO8HQ9EeaVIM6oAxJeaA _0DizMHQ-EeaVIM6oAxJeaA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_ymPHsHQ-EeaVIM6oAxJeaA" name="final" incoming="_0DizMHQ-EeaVIM6oAxJeaA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_juGX8HjiEea9GJgJKjF9pw" name="Activity1" node="_B97MkHjjEea9GJgJKjF9pw _JCVDcHjjEea9GJgJKjF9pw _KmioMHjjEea9GJgJKjF9pw _YhgHMHjjEea9GJgJKjF9pw _fnTFMHjjEea9GJgJKjF9pw _nNKDUHjjEea9GJgJKjF9pw _1KncsHjjEea9GJgJKjF9pw _JVhPwHjkEea9GJgJKjF9pw _6XacQHjkEea9GJgJKjF9pw _sEHgUHjlEea9GJgJKjF9pw _u5ubgHjlEea9GJgJKjF9pw _yVvPYHjlEea9GJgJKjF9pw" group="_m0xN8HjiEea9GJgJKjF9pw _oud6gHjiEea9GJgJKjF9pw _yLRzMHjiEea9GJgJKjF9pw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WclzsHjkEea9GJgJKjF9pw" target="_B97MkHjjEea9GJgJKjF9pw" source="_JCVDcHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XXUWkHjkEea9GJgJKjF9pw" target="_KmioMHjjEea9GJgJKjF9pw" source="_B97MkHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YAt44HjkEea9GJgJKjF9pw" target="_1KncsHjjEea9GJgJKjF9pw" source="_KmioMHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Za27oHjkEea9GJgJKjF9pw" target="_YhgHMHjjEea9GJgJKjF9pw" source="_1KncsHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_af200HjkEea9GJgJKjF9pw" target="_JVhPwHjkEea9GJgJKjF9pw" source="_fnTFMHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_a_3KkHjkEea9GJgJKjF9pw" target="_nNKDUHjjEea9GJgJKjF9pw" source="_JVhPwHjkEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_I7AokHjlEea9GJgJKjF9pw" target="_6XacQHjkEea9GJgJKjF9pw" source="_YhgHMHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Jph7cHjlEea9GJgJKjF9pw" target="_fnTFMHjjEea9GJgJKjF9pw" source="_6XacQHjkEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dwu6QHjlEea9GJgJKjF9pw" target="_YhgHMHjjEea9GJgJKjF9pw" source="_nNKDUHjjEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5vd2AHjlEea9GJgJKjF9pw" target="_sEHgUHjlEea9GJgJKjF9pw" source="_6XacQHjkEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9V04sHjlEea9GJgJKjF9pw" target="_yVvPYHjlEea9GJgJKjF9pw" source="_sEHgUHjlEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-6ja0HjlEea9GJgJKjF9pw" target="_u5ubgHjlEea9GJgJKjF9pw" source="_yVvPYHjlEea9GJgJKjF9pw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_E51csHjmEea9GJgJKjF9pw" target="_B97MkHjjEea9GJgJKjF9pw" source="_u5ubgHjlEea9GJgJKjF9pw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_m0xN8HjiEea9GJgJKjF9pw" name="TTAndC" node="_JCVDcHjjEea9GJgJKjF9pw _1KncsHjjEea9GJgJKjF9pw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_oud6gHjiEea9GJgJKjF9pw" name="Process" node="_6XacQHjkEea9GJgJKjF9pw _JVhPwHjkEea9GJgJKjF9pw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_yLRzMHjiEea9GJgJKjF9pw" name="CriticalSection/Mutex/Semaphore" node="_fnTFMHjjEea9GJgJKjF9pw _nNKDUHjjEea9GJgJKjF9pw _sEHgUHjlEea9GJgJKjF9pw _u5ubgHjlEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:AcceptEventAction" xmi:id="_B97MkHjjEea9GJgJKjF9pw" name="NewData()" incoming="_WclzsHjkEea9GJgJKjF9pw _E51csHjmEea9GJgJKjF9pw" outgoing="_XXUWkHjkEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_JCVDcHjjEea9GJgJKjF9pw" name="Start" outgoing="_WclzsHjkEea9GJgJKjF9pw" inPartition="_m0xN8HjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_KmioMHjjEea9GJgJKjF9pw" name="OpenPort()" incoming="_XXUWkHjkEea9GJgJKjF9pw" outgoing="_YAt44HjkEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YhgHMHjjEea9GJgJKjF9pw" name="getLastData()" incoming="_Za27oHjkEea9GJgJKjF9pw _dwu6QHjlEea9GJgJKjF9pw" outgoing="_I7AokHjlEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fnTFMHjjEea9GJgJKjF9pw" name="CriticalSection.Enter()" incoming="_Jph7cHjlEea9GJgJKjF9pw" outgoing="_af200HjkEea9GJgJKjF9pw" inPartition="_yLRzMHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_nNKDUHjjEea9GJgJKjF9pw" name="CriticalSection.Leave()" incoming="_a_3KkHjkEea9GJgJKjF9pw" outgoing="_dwu6QHjlEea9GJgJKjF9pw" inPartition="_yLRzMHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_1KncsHjjEea9GJgJKjF9pw" name="Is Open?" incoming="_YAt44HjkEea9GJgJKjF9pw" outgoing="_Za27oHjkEea9GJgJKjF9pw" inPartition="_m0xN8HjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JVhPwHjkEea9GJgJKjF9pw" name="Push()" incoming="_af200HjkEea9GJgJKjF9pw" outgoing="_a_3KkHjkEea9GJgJKjF9pw" inPartition="_oud6gHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_6XacQHjkEea9GJgJKjF9pw" name="data.length()>0" incoming="_I7AokHjlEea9GJgJKjF9pw" outgoing="_Jph7cHjlEea9GJgJKjF9pw _5vd2AHjlEea9GJgJKjF9pw" inPartition="_oud6gHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sEHgUHjlEea9GJgJKjF9pw" name="CriticalSection.Enter()" incoming="_5vd2AHjlEea9GJgJKjF9pw" outgoing="_9V04sHjlEea9GJgJKjF9pw" inPartition="_yLRzMHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_u5ubgHjlEea9GJgJKjF9pw" name="CriticalSection.Leave()" incoming="_-6ja0HjlEea9GJgJKjF9pw" outgoing="_E51csHjmEea9GJgJKjF9pw" inPartition="_yLRzMHjiEea9GJgJKjF9pw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yVvPYHjlEea9GJgJKjF9pw" name="Defrag()" incoming="_9V04sHjlEea9GJgJKjF9pw" outgoing="_-6ja0HjlEea9GJgJKjF9pw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hjb6YHjmEea9GJgJKjF9pw" name="TCommand">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_r2O_4HjmEea9GJgJKjF9pw" name="Id"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sYk38HjmEea9GJgJKjF9pw" name="ExecutionTime"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ssQo8HjmEea9GJgJKjF9pw" name="Source"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tCD50HjmEea9GJgJKjF9pw" name="Target"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tcOGQHjmEea9GJgJKjF9pw" name="Priority"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t00McHjmEea9GJgJKjF9pw" name="Timeout"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uog6QHjmEea9GJgJKjF9pw" name="IdTransaction"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BC05cHjnEea9GJgJKjF9pw" name="TCommandParameter">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_G8OVw3jnEea9GJgJKjF9pw" name="tcommand" type="_hjb6YHjmEea9GJgJKjF9pw" association="_G8OVwHjnEea9GJgJKjF9pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KFnIkHjnEea9GJgJKjF9pw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KFpk0HjnEea9GJgJKjF9pw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WkNXQHjnEea9GJgJKjF9pw" name="Key"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YGgQcHjnEea9GJgJKjF9pw" name="Value"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G8OVwHjnEea9GJgJKjF9pw" memberEnd="_G8OVw3jnEea9GJgJKjF9pw _G8O80HjnEea9GJgJKjF9pw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G8OVwXjnEea9GJgJKjF9pw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G8OVwnjnEea9GJgJKjF9pw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_G8O80HjnEea9GJgJKjF9pw" name="tcommandparameter" type="_BC05cHjnEea9GJgJKjF9pw" association="_G8OVwHjnEea9GJgJKjF9pw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pk1KUHjnEea9GJgJKjF9pw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pk40sHjnEea9GJgJKjF9pw" value="*"/>
+    </ownedEnd>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dx9hgG-eEeacOoNF2GD3DA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dx-IkG-eEeacOoNF2GD3DA" source="http://www.eclipse.org/uml2/2.0.0/UML">
