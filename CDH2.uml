@@ -188,7 +188,7 @@
 duration=(TBC,us)}</body>
           </ownedComment>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Z3wXwG-IEeahutXcYi_8-w" name="receptorCMD" type="_dMDaEG-IEeahutXcYi_8-w" aggregation="composite" association="_dMISkG-IEeahutXcYi_8-w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Z3wXwG-IEeahutXcYi_8-w" name="receptorTLCMD" type="_dMDaEG-IEeahutXcYi_8-w" aggregation="composite" association="_dMISkG-IEeahutXcYi_8-w"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_hlPn4G-IEeahutXcYi_8-w" name="USART4" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_OToX0G-JEeahutXcYi_8-w" name="I2C" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-sdZMG-JEeahutXcYi_8-w" name="managMemory" type="_BsCvwG-KEeahutXcYi_8-w" aggregation="composite" association="_BsGaIG-KEeahutXcYi_8-w"/>
@@ -198,6 +198,7 @@ duration=(TBC,us)}</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-oCyQG-UEeahutXcYi_8-w" name="processorCMD" type="__a0TAG-UEeahutXcYi_8-w" aggregation="composite" association="__a2IMG-UEeahutXcYi_8-w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_OPftYHUpEeaIiMPpeRfrkw" name="error_man" type="_htBdEHUpEeaIiMPpeRfrkw" aggregation="composite" association="_htLOEHUpEeaIiMPpeRfrkw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kg250HUtEeaIiMPpeRfrkw" name="commandList" type="_lnS9cHUtEeaIiMPpeRfrkw" aggregation="composite" association="_lnWAwHUtEeaIiMPpeRfrkw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6a1HMHjlEeakhKjBrS82KA" name="receptorCMD" type="_gxnaEHawEea5quINkfJNMA" aggregation="composite" association="_6a9qEHjlEeakhKjBrS82KA"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_GgrY4G-JEeahutXcYi_8-w" name="TLCMD">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_Ggr_8G-JEeahutXcYi_8-w" role="_hlPn4G-IEeahutXcYi_8-w"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_Ggr_8W-JEeahutXcYi_8-w" role="_Z3wXwG-IEeahutXcYi_8-w"/>
@@ -242,6 +243,14 @@ duration=(TBC,us)}</body>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_lsHWkHUuEeaIiMPpeRfrkw" role="_6YiE4G-UEeahutXcYi_8-w"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_lsHWkXUuEeaIiMPpeRfrkw" role="_OPftYHUpEeaIiMPpeRfrkw"/>
         </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_BFqngHjmEeakhKjBrS82KA" name="CMDs">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_BFrOkHjmEeakhKjBrS82KA" role="_6a1HMHjlEeakhKjBrS82KA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_BFrOkXjmEeakhKjBrS82KA" role="_-sdZMG-JEeahutXcYi_8-w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_FvItAHjmEeakhKjBrS82KA" name="CMDs">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FvJ7IHjmEeakhKjBrS82KA" role="_6a1HMHjlEeakhKjBrS82KA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FvJ7IXjmEeakhKjBrS82KA" role="_3Ml44G-KEeahutXcYi_8-w"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_lNSXgG-GEeahutXcYi_8-w" name="Time">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vV5hEG-YEeaf45zNRmm4CA" name="exploratorcmd_1" type="_AVL1EG-LEeahutXcYi_8-w" association="_vVyMUG-YEeaf45zNRmm4CA"/>
@@ -276,6 +285,8 @@ duration=(TBC,us)}</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KnE1EHaxEea5quINkfJNMA" name="receptorcmd_1" type="_gxnaEHawEea5quINkfJNMA" association="_Km-ucHaxEea5quINkfJNMA"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_aif90HUuEeaIiMPpeRfrkw" name="Read_Mem"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_bvnRMHUuEeaIiMPpeRfrkw" name="Write_Mem"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_teeosHjpEeakhKjBrS82KA" name="SendNOHighPriorityCMD"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_zHWVsHjpEeakhKjBrS82KA" name="SendNOHighPriorityCMD"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_BsGaIG-KEeahutXcYi_8-w" name="Association3" memberEnd="_-sdZMG-JEeahutXcYi_8-w _BsGaI2-KEeahutXcYi_8-w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BsGaIW-KEeahutXcYi_8-w" source="org.eclipse.papyrus">
@@ -326,6 +337,7 @@ duration=(TBC,us)}</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6Di8AnUpEeaIiMPpeRfrkw" name="error_management_1" type="_htBdEHUpEeaIiMPpeRfrkw" association="_6DiU8HUpEeaIiMPpeRfrkw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_NtdTIHUwEeaIiMPpeRfrkw" name="receptorcmd_1" type="_dMDaEG-IEeahutXcYi_8-w" association="_Ntbd8HUwEeaIiMPpeRfrkw"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_SNVG0HUnEeaIiMPpeRfrkw" name="Filter_CMD"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_McE-wHjpEeakhKjBrS82KA" name="SendCMDToProccess"/>
         <ownedReception xmi:type="uml:Reception" xmi:id="_xeJkwHUvEeaIiMPpeRfrkw" name="Receive_CMD" signal="_1WM0YHUvEeaIiMPpeRfrkw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="__a2IMG-UEeahutXcYi_8-w" name="Association7" memberEnd="_-oCyQG-UEeahutXcYi_8-w __a2IM2-UEeahutXcYi_8-w">
@@ -420,15 +432,26 @@ duration=(TBC,us)}</body>
         </eAnnotations>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_gxnaEHawEea5quINkfJNMA" name="ReceptorCMD">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_JtcgMHjnEeakhKjBrS82KA" name="isHighPriority">
+          <specification xmi:type="uml:LiteralString" xmi:id="_gBi-8HjoEeakhKjBrS82KA" name="isHighPriority" value="HighPriority == 1"/>
+        </ownedRule>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KnGDMHaxEea5quINkfJNMA" name="managmemory_1" type="_BsCvwG-KEeahutXcYi_8-w" association="_Km-ucHaxEea5quINkfJNMA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ccW_IHayEeaaKerBuwYewQ" name="exploratorcmd_1" type="_AVL1EG-LEeahutXcYi_8-w" association="_ccI8sHayEeaaKerBuwYewQ"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_eZaXIHaxEea5quINkfJNMA" name="isHighPriorityCMD"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ezBoQHjmEeakhKjBrS82KA" name="SenCMDToCDH"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xUzr8HjnEeakhKjBrS82KA" name="isHighPriority"/>
         <ownedReception xmi:type="uml:Reception" xmi:id="_OuZPwHaxEea5quINkfJNMA" name="CommandFromCA" signal="_1WM0YHUvEeaIiMPpeRfrkw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ccI8sHayEeaaKerBuwYewQ" memberEnd="_ccWYEHayEeaaKerBuwYewQ _ccW_IHayEeaaKerBuwYewQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ccT70HayEeaaKerBuwYewQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ccUi4HayEeaaKerBuwYewQ" key="nature" value="SysML_Nature"/>
         </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6a9qEHjlEeakhKjBrS82KA" name="Association10" memberEnd="_6a1HMHjlEeakhKjBrS82KA _6a-RInjlEeakhKjBrS82KA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6a-RIHjlEeakhKjBrS82KA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6a-RIXjlEeakhKjBrS82KA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6a-RInjlEeakhKjBrS82KA" name="cmds management" type="_E0reAG9xEeahutXcYi_8-w" association="_6a9qEHjlEeakhKjBrS82KA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_shGI4G9xEeahutXcYi_8-w" name="UseCase">
@@ -526,6 +549,46 @@ duration=(TBC,us)}</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_bVWB0Ha0EeaaKerBuwYewQ" name="Send to Process CMD" incoming="_3kVAEHa0EeaaKerBuwYewQ" outgoing="_76w00Ha0EeaaKerBuwYewQ" inPartition="_doT_cHazEeaaKerBuwYewQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_rslWAHa0EeaaKerBuwYewQ" name="Process CMD" incoming="_76w00Ha0EeaaKerBuwYewQ" outgoing="_H0dmsHa1EeaaKerBuwYewQ" inPartition="_jjKX0Ha0EeaaKerBuwYewQ"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_-oqlgHa0EeaaKerBuwYewQ" name="End" incoming="_GxJIgHa1EeaaKerBuwYewQ _H0dmsHa1EeaaKerBuwYewQ" inPartition="_FLrcAHa0EeaaKerBuwYewQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_au8ZsHjkEeakhKjBrS82KA" name="Activity1"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_pTgPUHjkEeakhKjBrS82KA" name="Interaction1">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_xHa3kHjkEeakhKjBrS82KA" name="Control Algorithm" coveredBy="_e0VP0HjmEeakhKjBrS82KA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_749HgHjkEeakhKjBrS82KA" name="ReceptorCMD" represents="_6a1HMHjlEeakhKjBrS82KA" coveredBy="_e0XFAHjmEeakhKjBrS82KA _umCOAHjmEeakhKjBrS82KA _umEDMHjmEeakhKjBrS82KA _umDcIHjmEeakhKjBrS82KA _JtWZkHjnEeakhKjBrS82KA _JtbSEHjnEeakhKjBrS82KA _38fAAHjmEeakhKjBrS82KA _38cjwHjmEeakhKjBrS82KA _xVMGcHjnEeakhKjBrS82KA _xVMtgHjnEeakhKjBrS82KA _9dgGoHjoEeakhKjBrS82KA _9ddqYHjoEeakhKjBrS82KA _NJ6VIHjpEeakhKjBrS82KA _ja98YHjpEeakhKjBrS82KA _ja9VUHjpEeakhKjBrS82KA _vvBvAHjpEeakhKjBrS82KA _zIHKsHjpEeakhKjBrS82KA _vvJq0HjpEeakhKjBrS82KA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_VeAPEHjlEeakhKjBrS82KA" name="ManagMemory" represents="_-sdZMG-JEeahutXcYi_8-w" coveredBy="_nWNC4HjpEeakhKjBrS82KA _nWMb0HjpEeakhKjBrS82KA _vvFZYHjpEeakhKjBrS82KA _zIIY0HjpEeakhKjBrS82KA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_ZbD6gHjlEeakhKjBrS82KA" name="Lifeline" represents="_-oCyQG-UEeahutXcYi_8-w" coveredBy="_HGSl0HjpEeakhKjBrS82KA _HGRXsHjpEeakhKjBrS82KA _MchqsHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_umCOAHjmEeakhKjBrS82KA" name="BehaviorExecSpecStart" covered="_749HgHjkEeakhKjBrS82KA" execution="_umDcIHjmEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_umDcIHjmEeakhKjBrS82KA" name="BehaviorExecSpec" covered="_749HgHjkEeakhKjBrS82KA" finish="_umEDMHjmEeakhKjBrS82KA" start="_umCOAHjmEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e0VP0HjmEeakhKjBrS82KA" name="SenCMDToCDH_MessageSend" covered="_xHa3kHjkEeakhKjBrS82KA" message="_ezdGEHjmEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e0XFAHjmEeakhKjBrS82KA" name="SenCMDToCDH_MessageRecv" covered="_749HgHjkEeakhKjBrS82KA" message="_ezdGEHjmEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_umEDMHjmEeakhKjBrS82KA" name="BehaviorExecSpecFinish" covered="_749HgHjkEeakhKjBrS82KA" execution="_umDcIHjmEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_JtWZkHjnEeakhKjBrS82KA" name="isHighPriority" covered="_749HgHjkEeakhKjBrS82KA" interactionOperator="alt">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_JtbSEHjnEeakhKjBrS82KA" name="InteractionOperand" covered="_749HgHjkEeakhKjBrS82KA">
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_38cjwHjmEeakhKjBrS82KA" name="ActionExecSpecStart" covered="_749HgHjkEeakhKjBrS82KA" execution="_38fAAHjmEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_38fAAHjmEeakhKjBrS82KA" name="ActionExecSpec" covered="_749HgHjkEeakhKjBrS82KA" finish="_xVMtgHjnEeakhKjBrS82KA" start="_38cjwHjmEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xVMGcHjnEeakhKjBrS82KA" name="isHighPriority_MessageSend" covered="_749HgHjkEeakhKjBrS82KA" message="_xVJqMHjnEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xVMtgHjnEeakhKjBrS82KA" name="isHighPriority_MessageRecv" covered="_749HgHjkEeakhKjBrS82KA" message="_xVJqMHjnEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_NJ6VIHjpEeakhKjBrS82KA" name="ActionExecSpec0Start" covered="_749HgHjkEeakhKjBrS82KA" execution="_9ddqYHjoEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_9ddqYHjoEeakhKjBrS82KA" name="ActionExecSpec0" covered="_749HgHjkEeakhKjBrS82KA" finish="_9dgGoHjoEeakhKjBrS82KA" start="_NJ6VIHjpEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_McfOcHjpEeakhKjBrS82KA" name="SendCMDToProccess_MessageSend" message="_MceAUHjpEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9dgGoHjoEeakhKjBrS82KA" name="ActionExecSpec0Finish" covered="_749HgHjkEeakhKjBrS82KA" execution="_9ddqYHjoEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ja9VUHjpEeakhKjBrS82KA" name="ActionExecSpec1" covered="_749HgHjkEeakhKjBrS82KA" finish="_ja98YHjpEeakhKjBrS82KA" start="_vvJq0HjpEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zIHKsHjpEeakhKjBrS82KA" name="SendNOHighPriorityCMD_MessageSend" covered="_749HgHjkEeakhKjBrS82KA" message="_zIFVgHjpEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ja98YHjpEeakhKjBrS82KA" name="ActionExecSpec1Finish" covered="_749HgHjkEeakhKjBrS82KA" execution="_ja9VUHjpEeakhKjBrS82KA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vvJq0HjpEeakhKjBrS82KA" name="ActionExecSpec1Start" covered="_749HgHjkEeakhKjBrS82KA" execution="_ja9VUHjpEeakhKjBrS82KA"/>
+        </operand>
+      </fragment>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_HGRXsHjpEeakhKjBrS82KA" name="BehaviorExecSpec0" covered="_ZbD6gHjlEeakhKjBrS82KA" finish="_HGSl0HjpEeakhKjBrS82KA" start="_MchqsHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MchqsHjpEeakhKjBrS82KA" name="SendCMDToProccess_MessageRecv" covered="_ZbD6gHjlEeakhKjBrS82KA" message="_MceAUHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HGSl0HjpEeakhKjBrS82KA" name="BehaviorExecSpec0Finish" covered="_ZbD6gHjlEeakhKjBrS82KA" execution="_HGRXsHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_nWMb0HjpEeakhKjBrS82KA" name="ActionExecSpec" covered="_VeAPEHjlEeakhKjBrS82KA" finish="_nWNC4HjpEeakhKjBrS82KA" start="_zIIY0HjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zIIY0HjpEeakhKjBrS82KA" name="SendNOHighPriorityCMD_MessageRecv" covered="_VeAPEHjlEeakhKjBrS82KA" message="_zIFVgHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vvBvAHjpEeakhKjBrS82KA" name="ActionExecSpec1Start" covered="_749HgHjkEeakhKjBrS82KA" execution="_ja9VUHjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vvFZYHjpEeakhKjBrS82KA" name="ActionExecSpecStart" covered="_VeAPEHjlEeakhKjBrS82KA" execution="_nWMb0HjpEeakhKjBrS82KA"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_nWNC4HjpEeakhKjBrS82KA" name="ActionExecSpecFinish" covered="_VeAPEHjlEeakhKjBrS82KA" execution="_nWMb0HjpEeakhKjBrS82KA"/>
+      <message xmi:type="uml:Message" xmi:id="_ezdGEHjmEeakhKjBrS82KA" name="SenCMDToCDH_Message" messageSort="asynchCall" receiveEvent="_e0XFAHjmEeakhKjBrS82KA" sendEvent="_e0VP0HjmEeakhKjBrS82KA" signature="_ezBoQHjmEeakhKjBrS82KA"/>
+      <message xmi:type="uml:Message" xmi:id="_xVJqMHjnEeakhKjBrS82KA" name="isHighPriority_Message" messageSort="asynchCall" receiveEvent="_xVMtgHjnEeakhKjBrS82KA" sendEvent="_xVMGcHjnEeakhKjBrS82KA" signature="_xUzr8HjnEeakhKjBrS82KA"/>
+      <message xmi:type="uml:Message" xmi:id="_MceAUHjpEeakhKjBrS82KA" name="SendHighPriorityCMD()" messageSort="asynchCall" receiveEvent="_MchqsHjpEeakhKjBrS82KA" sendEvent="_McfOcHjpEeakhKjBrS82KA" signature="_McE-wHjpEeakhKjBrS82KA"/>
+      <message xmi:type="uml:Message" xmi:id="_zIFVgHjpEeakhKjBrS82KA" name="SendNOHighPriorityCMD_Message" messageSort="asynchCall" receiveEvent="_zIIY0HjpEeakhKjBrS82KA" sendEvent="_zIHKsHjpEeakhKjBrS82KA" signature="_zHWVsHjpEeakhKjBrS82KA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ExvewG9xEeahutXcYi_8-w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ExwF0G9xEeahutXcYi_8-w" source="http://www.eclipse.org/uml2/2.0.0/UML">
